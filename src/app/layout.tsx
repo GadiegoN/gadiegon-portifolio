@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ReactNode } from "react";
 import { Footer } from "@/components/core/footer";
 import { Header } from "@/components/core/header";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           enableSystem
           disableTransitionOnChange
         >
+          <Analytics />
           <Header />
           {children}
           <Footer />
