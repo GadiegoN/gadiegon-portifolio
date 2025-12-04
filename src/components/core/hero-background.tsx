@@ -7,7 +7,7 @@ export function HeroBackground() {
         className="w-full h-[calc(100vh-4rem)]"
         viewBox="0 0 1440 900"
         preserveAspectRatio="none"
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="https://www.w3.org/2000/svg"
       >
         <path
           fill="url(#gradientTop)"
