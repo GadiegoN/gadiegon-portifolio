@@ -6,6 +6,17 @@ import Link from "next/link";
 import { Mail, Calendar, MessageCircle } from "lucide-react";
 
 export function FinalCTA() {
+  const handleWhatsAppClick = () => {
+    fetch("/api/meta/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        event_source_url: window.location.href,
+        event_id: "whatsapp_click",
+      }),
+    });
+  };
+
   return (
     <section className="py-24 container mx-auto px-6 text-center">
       <motion.h2
@@ -35,7 +46,7 @@ export function FinalCTA() {
         transition={{ delay: 0.25, duration: 0.6 }}
         className="flex flex-col sm:flex-row justify-center gap-4 mt-10"
       >
-        <Button asChild size="lg">
+        <Button asChild size="lg" onClick={handleWhatsAppClick}>
           <Link
             href="https://wa.me/5534984081905?text=Ol%C3%A1,%20quero%20falar%20sobre%20um%20site!"
             target="_blank"
