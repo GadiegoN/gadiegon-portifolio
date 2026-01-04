@@ -1,0 +1,53 @@
+{
+    "Hero": {
+        "headline": "We develop professional, fast, and fully customized systems for your business.",
+        "description": "Clean design, great performance, and clear communication from start to finish. No complications.",
+        "btn_budgets": "Request a quote now",
+        "btn_projects": "View projects"
+    },
+    "Services": {
+        "title": "What we do",
+        "subtitle": "Direct and practical services to help your business have a clearer and more efficient online presence.",
+        "items": [
+            {
+                "title": "Simple and straight-to-the-point websites",
+                "description": "Clear, objective, and easy-to-navigate websites tailored to your business."
+            },
+            {
+                "title": "Pages designed to present your work clearly",
+                "description": "I structure information in an organized way so your client quickly understands what you do."
+            },
+            {
+                "title": "Speed and navigation improvements",
+                "description": "Optimization to make your website faster and provide a lighter experience for users."
+            },
+            {
+                "title": "Layout and content updates for old websites",
+                "description": "I give your website a fresh look without complications, keeping everything modern and up to date."
+            },
+            {
+                "title": "Adjustments, fixes, and general improvements",
+                "description": "Error fixing, small adjustments, and specific improvements based on your needs."
+            }
+        ]
+    },
+    "MetodoFoco": {
+        "title": "FOCO Method",
+        "subtitle": "A practical method to turn unclear requests into clear, executable, and verifiable instructions — for people and AI.",
+        "items": [
+            {
+                "title": "Clarity before execution",
+                "description": "Turn vague ideas into objective instructions before delegating or using artificial intelligence."
+            },
+            {
+                "title": "Simple and repeatable structure",
+                "description": "A mental model that works for writing, code, design, and decision-making."
+            },
+            {
+                "title": "Clear success criteria",
+                "description": "Stop endless revisions and know exactly when something is done."
+            }
+        ],
+        "cta_alt": "Buy now"
+    }
+}

@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { HeroBackground } from "./hero-background";
+import { useTranslations } from "next-intl";
 
 export function Hero() {
+  const t = useTranslations("Hero");
+
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
       <HeroBackground />
@@ -17,8 +20,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-5xl font-bold text-foreground leading-tight max-w-3xl mx-auto"
         >
-          Desenvolvemos sistemas profissionais, rápidos e feitos sob medida para
-          o seu negócio.
+          {t("headline")}
         </motion.h1>
 
         <motion.p
@@ -27,8 +29,7 @@ export function Hero() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
         >
-          Design limpo, boa performance e comunicação clara do começo ao fim.
-          Sem complicação.
+          {t("description")}
         </motion.p>
 
         <motion.div
@@ -42,12 +43,12 @@ export function Hero() {
               href="https://wa.me/5534984081905?text=Ol%C3%A1,%20quero%20um%20or%C3%A7amento!"
               target="_blank"
             >
-              Quero um orçamento agora
+              {t("btn_budgets")}
             </Link>
           </Button>
 
           <Button asChild size="lg" variant="outline">
-            <a href="#projetos">Ver projetos</a>
+            <a href="#projetos">{t("btn_projects")}</a>
           </Button>
         </motion.div>
       </div>

@@ -1,0 +1,53 @@
+{
+    "Hero": {
+        "headline": "Desenvolvemos sistemas profissionais, rápidos e feitos sob medida para o seu negócio.",
+        "description": "Design limpo, boa performance e comunicação clara do começo ao fim. Sem complicação.",
+        "btn_budgets": "Quero um orçamento agora",
+        "btn_projects": "Ver projetos"
+    },
+    "Services": {
+        "title": "O que fazemos",
+        "subtitle": "Serviços diretos e práticos para ajudar seu negócio a ter uma presença online mais clara e eficiente.",
+        "items": [
+            {
+                "title": "Criação de sites simples e diretos ao ponto",
+                "description": "Sites claros, objetivos e fáceis de navegar, feitos sob medida para o seu negócio."
+            },
+            {
+                "title": "Páginas para apresentar seu trabalho de forma clara",
+                "description": "Estruturo a informação de forma organizada para que seu cliente entenda rapidamente o que você faz."
+            },
+            {
+                "title": "Melhorias de velocidade e navegação",
+                "description": "Otimização para deixar seu site mais rápido e oferecer uma experiência mais leve para o usuário."
+            },
+            {
+                "title": "Atualização de layout e conteúdo de sites antigos",
+                "description": "Dou uma nova cara ao seu site sem complicação, mantendo tudo atual e mais moderno."
+            },
+            {
+                "title": "Ajustes, correções e melhorias gerais no seu site",
+                "description": "Correção de erros, pequenos ajustes e melhorias pontuais conforme a sua necessidade."
+            }
+        ]
+    },
+    "MetodoFoco": {
+        "title": "Método FOCO",
+        "subtitle": "Um método prático para transformar pedidos confusos em instruções claras, executáveis e avaliáveis — para pessoas e para IA.",
+        "items": [
+            {
+                "title": "Clareza antes da execução",
+                "description": "Transforme ideias vagas em instruções objetivas antes de delegar ou usar inteligência artificial."
+            },
+            {
+                "title": "Estrutura simples e replicável",
+                "description": "Um modelo mental que funciona para textos, código, design e tomada de decisão."
+            },
+            {
+                "title": "Critério claro de sucesso",
+                "description": "Pare de revisar infinitamente e saiba exatamente quando algo está pronto."
+            }
+        ],
+        "cta_alt": "Comprar agora"
+    }
+}

@@ -2,41 +2,19 @@
 
 import { motion } from "framer-motion";
 import { Layout, FileText, Gauge, RefreshCcw, Wrench } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const services = [
-  {
-    title: "Criação de sites simples e diretos ao ponto",
-    description:
-      "Sites claros, objetivos e fáceis de navegar, feitos sob medida para o seu negócio.",
-    icon: Layout,
-  },
-  {
-    title: "Páginas para apresentar seu trabalho de forma clara",
-    description:
-      "Estruturo a informação de forma organizada para que seu cliente entenda rapidamente o que você faz.",
-    icon: FileText,
-  },
-  {
-    title: "Melhorias de velocidade e navegação",
-    description:
-      "Otimização para deixar seu site mais rápido e oferecer uma experiência mais leve para o usuário.",
-    icon: Gauge,
-  },
-  {
-    title: "Atualização de layout e conteúdo de sites antigos",
-    description:
-      "Dou uma nova cara ao seu site sem complicação, mantendo tudo atual e mais moderno.",
-    icon: RefreshCcw,
-  },
-  {
-    title: "Ajustes, correções e melhorias gerais no seu site",
-    description:
-      "Correção de erros, pequenos ajustes e melhorias pontuais conforme a sua necessidade.",
-    icon: Wrench,
-  },
+  { icon: Layout },
+  { icon: FileText },
+  { icon: Gauge },
+  { icon: RefreshCcw },
+  { icon: Wrench },
 ];
 
 export function Services() {
+  const t = useTranslations("Services");
+
   return (
     <section id="servicos" className="relative w-full py-24">
       <div className="container mx-auto px-6">
@@ -47,7 +25,7 @@ export function Services() {
           transition={{ duration: 0.6 }}
           className="text-center text-3xl md:text-4xl font-bold text-foreground"
         >
-          O que fazemos
+          {t("title")}
         </motion.h2>
 
         <motion.p
@@ -57,8 +35,7 @@ export function Services() {
           transition={{ delay: 0.15, duration: 0.6 }}
           className="mt-4 text-center text-muted-foreground max-w-2xl mx-auto"
         >
-          Serviços diretos e práticos para ajudar seu negócio a ter uma presença
-          online mais clara e eficiente.
+          {t("subtitle")}
         </motion.p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
@@ -67,7 +44,7 @@ export function Services() {
 
             return (
               <motion.div
-                key={service.title}
+                key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -79,11 +56,11 @@ export function Services() {
                 </div>
 
                 <h3 className="text-lg font-semibold text-foreground mb-2">
-                  {service.title}
+                  {t(`items.${index}.title`)}
                 </h3>
 
                 <p className="text-sm text-muted-foreground">
-                  {service.description}
+                  {t(`items.${index}.description`)}
                 </p>
               </motion.div>
             );
