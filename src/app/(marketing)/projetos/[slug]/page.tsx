@@ -52,7 +52,7 @@ export default async function ProjectPage({
         target="_blank"
         className="inline-block mt-10 text-primary hover:underline font-medium"
       >
-        Visitar site →
+        {project.ctaLabel ?? "Visitar site"} →
       </a>
     </section>
   );

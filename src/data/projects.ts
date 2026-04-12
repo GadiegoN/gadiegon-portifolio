@@ -2,6 +2,30 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    slug: "showup",
+    title: "ShowUp",
+    description:
+      "Aplicativo de agenda profissional com operação diária focada em atendimento, clientes, agendamentos e financeiro básico.",
+    impact:
+      "Organiza a rotina de atendimento em um app funcional, com operação offline e sincronização posterior.",
+    url: "/apk/app-release.apk",
+    image: "/projects/showup.png",
+    ctaLabel: "Baixar APK",
+    features: [
+      "Autenticação por email e senha com Supabase Auth",
+      "Cadastro e edição de clientes",
+      "Criação, edição e acompanhamento de agendamentos",
+      "Agenda baseada em horários vagos",
+      "Tela separada para agendamentos já cadastrados",
+      "Regras de disponibilidade por dia da semana",
+      "Financeiro básico por atendimento",
+      "Armazenamento local em SQLite",
+      "Sincronização com Supabase",
+      "Operação offline com reenvio quando a conexão volta",
+      "Lembretes locais por notificação",
+    ],
+  },
+  {
     slug: "snackfy",
     title: "Snackfy",
     description:
@@ -9,6 +33,7 @@ export const projects: Project[] = [
     impact: "Organização mais clara dos produtos para o cliente.",
     url: "https://snackfy.vercel.app/",
     image: "/projects/snackfy.png",
+    ctaLabel: "Visitar site",
     features: [
       "Layout simples e direto",
       "Navegação intuitiva",
@@ -24,6 +49,7 @@ export const projects: Project[] = [
     impact: "Informações mais acessíveis e fáceis de navegar.",
     url: "https://guide-city.vercel.app/",
     image: "/projects/guide-city.png",
+    ctaLabel: "Visitar site",
     features: [
       "Conteúdo organizado",
       "Interface limpa",
@@ -39,6 +65,7 @@ export const projects: Project[] = [
     impact: "Experiência mais direta e fácil para o usuário.",
     url: "https://fut-pro-plum.vercel.app/",
     image: "/projects/futpro.png",
+    ctaLabel: "Visitar site",
     features: [
       "Layout funcional",
       "Informações bem distribuídas",
@@ -54,6 +81,7 @@ export const projects: Project[] = [
     impact: "Explicação mais clara das funcionalidades do sistema.",
     url: "https://saas-agenda.vercel.app/",
     image: "/projects/saas-agenda.png",
+    ctaLabel: "Visitar site",
     features: [
       "Seções bem estruturadas",
       "Design focado em clareza",
@@ -69,6 +97,7 @@ export const projects: Project[] = [
     impact: "Melhor organização visual das informações do evento.",
     url: "https://organize-birthday.vercel.app/",
     image: "/projects/organize-birthday.png",
+    ctaLabel: "Visitar site",
     features: [
       "Design suave",
       "Conteúdo direto ao ponto",

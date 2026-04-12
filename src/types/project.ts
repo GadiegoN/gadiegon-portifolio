@@ -6,4 +6,5 @@ export interface Project {
   url: string;
   image: string;
   features: string[];
+  ctaLabel?: string;
 }
