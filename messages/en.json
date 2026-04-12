@@ -30,24 +30,5 @@
                 "description": "Error fixing, small adjustments, and specific improvements based on your needs."
             }
         ]
-    },
-    "MetodoFoco": {
-        "title": "FOCO Method",
-        "subtitle": "A practical method to turn unclear requests into clear, executable, and verifiable instructions — for people and AI.",
-        "items": [
-            {
-                "title": "Clarity before execution",
-                "description": "Turn vague ideas into objective instructions before delegating or using artificial intelligence."
-            },
-            {
-                "title": "Simple and repeatable structure",
-                "description": "A mental model that works for writing, code, design, and decision-making."
-            },
-            {
-                "title": "Clear success criteria",
-                "description": "Stop endless revisions and know exactly when something is done."
-            }
-        ],
-        "cta_alt": "Buy now"
     }
 }

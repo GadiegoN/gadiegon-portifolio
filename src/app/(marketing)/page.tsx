@@ -1,6 +1,5 @@
 import { Hero } from "@/components/core/hero";
 import { FinalCTA } from "@/components/marketing/final-cta";
-import { MetodoFocoSection } from "@/components/marketing/metodo-foco";
 import { PricingSection } from "@/components/marketing/pricing";
 import { ProcessSection } from "@/components/marketing/process";
 import { ProjectsSection } from "@/components/marketing/projects";
@@ -19,8 +18,6 @@ export default function HomePage() {
       <Testimonials />
 
       <ProcessSection />
-
-      <MetodoFocoSection />
 
       <PricingSection />
 

@@ -1,53 +1,34 @@
 {
     "Hero": {
-        "headline": "Desenvolvemos sistemas profissionais, rápidos e feitos sob medida para o seu negócio.",
-        "description": "Design limpo, boa performance e comunicação clara do começo ao fim. Sem complicação.",
-        "btn_budgets": "Quero um orçamento agora",
+        "headline": "Desenvolvemos sistemas profissionais, rÃ¡pidos e feitos sob medida para o seu negÃ³cio.",
+        "description": "Design limpo, boa performance e comunicaÃ§Ã£o clara do comeÃ§o ao fim. Sem complicaÃ§Ã£o.",
+        "btn_budgets": "Quero um orÃ§amento agora",
         "btn_projects": "Ver projetos"
     },
     "Services": {
         "title": "O que fazemos",
-        "subtitle": "Serviços diretos e práticos para ajudar seu negócio a ter uma presença online mais clara e eficiente.",
+        "subtitle": "ServiÃ§os diretos e prÃ¡ticos para ajudar seu negÃ³cio a ter uma presenÃ§a online mais clara e eficiente.",
         "items": [
             {
-                "title": "Criação de sites simples e diretos ao ponto",
-                "description": "Sites claros, objetivos e fáceis de navegar, feitos sob medida para o seu negócio."
+                "title": "CriaÃ§Ã£o de sites simples e diretos ao ponto",
+                "description": "Sites claros, objetivos e fÃ¡ceis de navegar, feitos sob medida para o seu negÃ³cio."
             },
             {
-                "title": "Páginas para apresentar seu trabalho de forma clara",
-                "description": "Estruturo a informação de forma organizada para que seu cliente entenda rapidamente o que você faz."
+                "title": "PÃ¡ginas para apresentar seu trabalho de forma clara",
+                "description": "Estruturo a informaÃ§Ã£o de forma organizada para que seu cliente entenda rapidamente o que vocÃª faz."
             },
             {
-                "title": "Melhorias de velocidade e navegação",
-                "description": "Otimização para deixar seu site mais rápido e oferecer uma experiência mais leve para o usuário."
+                "title": "Melhorias de velocidade e navegaÃ§Ã£o",
+                "description": "OtimizaÃ§Ã£o para deixar seu site mais rÃ¡pido e oferecer uma experiÃªncia mais leve para o usuÃ¡rio."
             },
             {
-                "title": "Atualização de layout e conteúdo de sites antigos",
-                "description": "Dou uma nova cara ao seu site sem complicação, mantendo tudo atual e mais moderno."
+                "title": "AtualizaÃ§Ã£o de layout e conteÃºdo de sites antigos",
+                "description": "Dou uma nova cara ao seu site sem complicaÃ§Ã£o, mantendo tudo atual e mais moderno."
             },
             {
-                "title": "Ajustes, correções e melhorias gerais no seu site",
-                "description": "Correção de erros, pequenos ajustes e melhorias pontuais conforme a sua necessidade."
+                "title": "Ajustes, correÃ§Ãµes e melhorias gerais no seu site",
+                "description": "CorreÃ§Ã£o de erros, pequenos ajustes e melhorias pontuais conforme a sua necessidade."
             }
         ]
-    },
-    "MetodoFoco": {
-        "title": "Método FOCO",
-        "subtitle": "Um método prático para transformar pedidos confusos em instruções claras, executáveis e avaliáveis — para pessoas e para IA.",
-        "items": [
-            {
-                "title": "Clareza antes da execução",
-                "description": "Transforme ideias vagas em instruções objetivas antes de delegar ou usar inteligência artificial."
-            },
-            {
-                "title": "Estrutura simples e replicável",
-                "description": "Um modelo mental que funciona para textos, código, design e tomada de decisão."
-            },
-            {
-                "title": "Critério claro de sucesso",
-                "description": "Pare de revisar infinitamente e saiba exatamente quando algo está pronto."
-            }
-        ],
-        "cta_alt": "Comprar agora"
     }
 }
