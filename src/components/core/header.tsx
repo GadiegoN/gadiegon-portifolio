@@ -20,21 +20,21 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/75 backdrop-blur-xl">
+      <div className="container mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
         <Link
           href="/"
-          className="text-xl font-semibold text-foreground hover:opacity-80 transition"
+          className="text-xl font-semibold tracking-tight text-foreground transition hover:opacity-80"
         >
           Gadiego Nogueira
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition"
+              className="text-sm text-muted-foreground transition hover:text-foreground"
             >
               {link.name}
             </a>
@@ -53,7 +53,7 @@ export function Header() {
         </nav>
 
         <button
-          className="md:hidden text-muted-foreground hover:text-foreground transition"
+          className="text-muted-foreground transition hover:text-foreground md:hidden"
           onClick={toggleMenu}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -61,14 +61,14 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-sm">
-          <nav className="flex flex-col px-6 py-4 gap-4">
+        <div className="border-t border-border bg-background/95 backdrop-blur-sm md:hidden">
+          <nav className="flex flex-col gap-4 px-6 py-4">
             {links.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-muted-foreground hover:text-foreground transition"
+                className="text-sm text-muted-foreground transition hover:text-foreground"
               >
                 {link.name}
               </a>
@@ -83,7 +83,7 @@ export function Header() {
               </Link>
             </Button>
           </nav>
-          <div className="flex py-6 justify-center items-center border-b-2">
+          <div className="flex items-center justify-center border-b-2 py-6">
             <ModeToggle />
           </div>
         </div>

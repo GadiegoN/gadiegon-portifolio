@@ -38,13 +38,16 @@ const plans = [
 
 export function PricingSection() {
   return (
-    <section id="precos" className="py-24 container mx-auto px-6">
+    <section
+      id="precos"
+      className="container mx-auto max-w-7xl px-6 py-28 md:px-8 md:py-32"
+    >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="text-center text-3xl md:text-4xl font-bold text-foreground"
+        className="text-center text-3xl font-bold text-foreground md:text-4xl"
       >
         Preços
       </motion.h2>
@@ -54,12 +57,12 @@ export function PricingSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.15, duration: 0.6 }}
-        className="mt-4 text-center text-muted-foreground max-w-2xl mx-auto"
+        className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground"
       >
         Opções simples e transparentes para diferentes tipos de projetos.
       </motion.p>
 
-      <div className="grid md:grid-cols-3 gap-8 mt-16">
+      <div className="mt-16 grid gap-8 md:grid-cols-3">
         {plans.map((plan, index) => (
           <motion.div
             key={plan.title}
@@ -67,14 +70,14 @@ export function PricingSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1, duration: 0.5 }}
-            className="p-6 border border-border rounded-xl bg-background shadow-sm hover:shadow-md transition"
+            className="rounded-[1.75rem] border border-border/80 bg-card p-7 shadow-[0_16px_55px_-38px_rgba(0,0,0,0.45)] transition-all hover:-translate-y-1 hover:border-primary/30"
           >
             <h3 className="text-xl font-semibold text-foreground">
               {plan.title}
             </h3>
-            <p className="text-primary font-medium mt-2">{plan.price}</p>
+            <p className="mt-2 font-medium text-primary">{plan.price}</p>
 
-            <p className="text-sm text-muted-foreground mt-4">
+            <p className="mt-4 text-sm leading-7 text-muted-foreground">
               {plan.description}
             </p>
 
@@ -87,7 +90,7 @@ export function PricingSection() {
         ))}
       </div>
 
-      <p className="text-center text-muted-foreground text-sm mt-10">
+      <p className="mt-10 text-center text-sm text-muted-foreground">
         *O valor final pode variar conforme as necessidades do projeto.
       </p>
     </section>
