@@ -7,7 +7,7 @@ import { ReactNode } from "react";
 import { Footer } from "@/components/core/footer";
 import { Header } from "@/components/core/header";
 import { Analytics } from "@vercel/analytics/next";
-import { getMessages, getLocale } from "next-intl/server";
+import { getMessages, getLocale, getTimeZone } from "next-intl/server";
 import { IntlProvider } from "@/components/providers/intl-provider";
 
 const inter = Inter({
@@ -54,6 +54,7 @@ export default async function RootLayout({
 
   const locale = storedLang || (await getLocale());
   const messages = await getMessages();
+  const timeZone = await getTimeZone();
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -64,7 +65,7 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <IntlProvider locale={locale} messages={messages}>
+          <IntlProvider locale={locale} messages={messages} timeZone={timeZone}>
             <Header />
 
             {children}
