@@ -1,34 +1,34 @@
 {
-    "Hero": {
-        "headline": "Desenvolvemos sistemas profissionais, rápidos e feitos sob medida para o seu negócio.",
-        "description": "Design limpo, boa performance e comunicação clara do começo ao fim. Sem complicação.",
-        "btn_budgets": "Quero um orçamento agora",
-        "btn_projects": "Ver projetos"
-    },
-    "Services": {
-        "title": "O que fazemos",
-        "subtitle": "Serviços diretos e práticos para ajudar seu negócio a ter uma presença online mais clara e eficiente.",
-        "items": [
-            {
-                "title": "Criação de sites simples e diretos ao ponto",
-                "description": "Sites claros, objetivos e fáceis de navegar, feitos sob medida para o seu negócio."
-            },
-            {
-                "title": "Páginas para apresentar seu trabalho de forma clara",
-                "description": "Estruturo a informação de forma organizada para que seu cliente entenda rapidamente o que você faz."
-            },
-            {
-                "title": "Melhorias de velocidade e navegação",
-                "description": "Otimização para deixar seu site mais rápido e oferecer uma experiência mais leve para o usuário."
-            },
-            {
-                "title": "Atualização de layout e conteúdo de sites antigos",
-                "description": "Dou uma nova cara ao seu site sem complicação, mantendo tudo atual e mais moderno."
-            },
-            {
-                "title": "Ajustes, correções e melhorias gerais no seu site",
-                "description": "Correção de erros, pequenos ajustes e melhorias pontuais conforme a sua necessidade."
-            }
-        ]
-    }
+  "Hero": {
+    "headline": "Desenvolvemos sistemas profissionais, rápidos e feitos sob medida para o seu negócio.",
+    "description": "Design limpo, boa performance e comunicação clara do começo ao fim. Sem complicação.",
+    "btn_budgets": "Quero um orçamento agora",
+    "btn_projects": "Ver projetos"
+  },
+  "Services": {
+    "title": "O que eu desenvolvo",
+    "subtitle": "Projetos digitais construídos para uso real, com foco em fluxo, organização da interface e funcionamento consistente no dia a dia.",
+    "items": [
+      {
+        "title": "Interfaces para sistemas e produtos digitais",
+        "description": "Telas pensadas para operação real, com navegação clara, hierarquia bem resolvida e foco no que precisa ser usado no dia a dia."
+      },
+      {
+        "title": "Aplicativos e experiências mobile",
+        "description": "Aplicações voltadas para uso prático, com fluxo consistente, boa leitura da interface e atenção à rotina de quem usa."
+      },
+      {
+        "title": "Dashboards, painéis e áreas operacionais",
+        "description": "Estruturação de áreas com dados, cadastros, agenda, atendimento, financeiro e outras partes centrais da operação do produto."
+      },
+      {
+        "title": "Funcionalidades, regras e integrações",
+        "description": "Construção de fluxos que dependem de autenticação, sincronização, persistência de dados, consumo de APIs e comportamento consistente da aplicação."
+      },
+      {
+        "title": "Ajustes, manutenção e evolução de produto",
+        "description": "Melhorias em projetos já existentes, correção de problemas, refinamento de interface e continuidade no desenvolvimento do sistema."
+      }
+    ]
+  }
 }

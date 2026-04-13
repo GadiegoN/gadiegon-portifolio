@@ -1,14 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Layout, FileText, Gauge, RefreshCcw, Wrench } from "lucide-react";
+import {
+  Monitor,
+  Smartphone,
+  LayoutDashboard,
+  DatabaseZap,
+  Wrench,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const services = [
-  { icon: Layout },
-  { icon: FileText },
-  { icon: Gauge },
-  { icon: RefreshCcw },
+  { icon: Monitor },
+  { icon: Smartphone },
+  { icon: LayoutDashboard },
+  { icon: DatabaseZap },
   { icon: Wrench },
 ];
 
@@ -33,7 +39,7 @@ export function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.15, duration: 0.6 }}
-          className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground"
+          className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground"
         >
           {t("subtitle")}
         </motion.p>

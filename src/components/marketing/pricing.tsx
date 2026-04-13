@@ -4,33 +4,37 @@ import { motion } from "framer-motion";
 
 const plans = [
   {
-    title: "Landing page",
+    title: "Projeto inicial",
     price: "a partir de R$ 600",
     description:
-      "Página única para apresentar seu produto, serviço ou campanha com clareza.",
-    features: ["Design personalizado", "Conteúdo organizado", "Responsividade"],
+      "Estrutura enxuta para páginas, interfaces ou fluxos menores, com foco em clareza e boa apresentação.",
+    features: [
+      "Escopo mais direto",
+      "Interface organizada",
+      "Responsividade",
+    ],
   },
   {
-    title: "Site institucional",
+    title: "Projeto intermediário",
     price: "a partir de R$ 1.200",
     description:
-      "Site profissional e direto ao ponto, ideal para pequenos negócios.",
+      "Solução com mais profundidade para projetos que exigem mais telas, organização de conteúdo ou fluxo de uso mais completo.",
     features: [
-      "Até 4 páginas",
-      "Design profissional",
+      "Mais estrutura funcional",
+      "Design mais refinado",
       "Boa performance",
       "Responsividade",
     ],
   },
   {
-    title: "Loja virtual simples",
+    title: "Projeto mais completo",
     price: "a partir de R$ 1.800",
     description:
-      "Loja básica para vendas online, com estrutura clara e fácil de usar.",
+      "Projetos com maior complexidade visual ou funcional, pensados para demandas que envolvem mais partes do produto.",
     features: [
-      "Página de produtos",
-      "Carrinho simples",
-      "Layout limpo",
+      "Escopo mais amplo",
+      "Fluxos mais completos",
+      "Layout bem resolvido",
       "Responsividade",
     ],
   },
@@ -59,7 +63,7 @@ export function PricingSection() {
         transition={{ delay: 0.15, duration: 0.6 }}
         className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground"
       >
-        Opções simples e transparentes para diferentes tipos de projetos.
+        Faixas de investimento para diferentes níveis de escopo e complexidade.
       </motion.p>
 
       <div className="mt-16 grid gap-8 md:grid-cols-3">

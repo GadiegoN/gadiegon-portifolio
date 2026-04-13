@@ -1,34 +1,34 @@
 {
-    "Hero": {
-        "headline": "We develop professional, fast, and fully customized systems for your business.",
-        "description": "Clean design, great performance, and clear communication from start to finish. No complications.",
-        "btn_budgets": "Request a quote now",
-        "btn_projects": "View projects"
-    },
-    "Services": {
-        "title": "What we do",
-        "subtitle": "Direct and practical services to help your business have a clearer and more efficient online presence.",
-        "items": [
-            {
-                "title": "Simple and straight-to-the-point websites",
-                "description": "Clear, objective, and easy-to-navigate websites tailored to your business."
-            },
-            {
-                "title": "Pages designed to present your work clearly",
-                "description": "I structure information in an organized way so your client quickly understands what you do."
-            },
-            {
-                "title": "Speed and navigation improvements",
-                "description": "Optimization to make your website faster and provide a lighter experience for users."
-            },
-            {
-                "title": "Layout and content updates for old websites",
-                "description": "I give your website a fresh look without complications, keeping everything modern and up to date."
-            },
-            {
-                "title": "Adjustments, fixes, and general improvements",
-                "description": "Error fixing, small adjustments, and specific improvements based on your needs."
-            }
-        ]
-    }
+  "Hero": {
+    "headline": "We develop professional, fast, and fully customized systems for your business.",
+    "description": "Clean design, great performance, and clear communication from start to finish. No complications.",
+    "btn_budgets": "Request a quote now",
+    "btn_projects": "View projects"
+  },
+  "Services": {
+    "title": "What I build",
+    "subtitle": "Digital projects built for real use, with focus on flow, interface organization, and consistent day-to-day operation.",
+    "items": [
+      {
+        "title": "Interfaces for systems and digital products",
+        "description": "Screens designed for real operation, with clear navigation, strong hierarchy, and focus on what needs to be used every day."
+      },
+      {
+        "title": "Mobile applications and experiences",
+        "description": "Applications built for practical use, with consistent flows, readable interfaces, and attention to the user’s routine."
+      },
+      {
+        "title": "Dashboards, panels, and operational areas",
+        "description": "Structuring areas with data, records, scheduling, customer service, finance, and other central parts of product operation."
+      },
+      {
+        "title": "Features, rules, and integrations",
+        "description": "Building flows that depend on authentication, synchronization, data persistence, API consumption, and consistent application behavior."
+      },
+      {
+        "title": "Fixes, maintenance, and product evolution",
+        "description": "Improvements to existing projects, issue fixing, interface refinement, and continuity in system development."
+      }
+    ]
+  }
 }
