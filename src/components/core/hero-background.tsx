@@ -3,7 +3,7 @@
 export function HeroBackground() {
   return (
     <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-primary/10 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-40 bg-linear-to-b from-primary/10 to-transparent" />
       <div className="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
 
       <svg
