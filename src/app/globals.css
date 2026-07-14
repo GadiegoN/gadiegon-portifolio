@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -120,13 +121,29 @@
   body {
     @apply bg-background text-foreground;
     background-image:
-      radial-gradient(circle at top left, color-mix(in oklab, var(--primary) 10%, transparent) 0, transparent 34%),
-      linear-gradient(to bottom, color-mix(in oklab, var(--background) 92%, white 8%), var(--background));
+      radial-gradient(
+        circle at top left,
+        color-mix(in oklab, var(--primary) 10%, transparent) 0,
+        transparent 34%
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--background) 92%, white 8%),
+        var(--background)
+      );
   }
 }
 
 .dark body {
   background-image:
-    radial-gradient(circle at top left, color-mix(in oklab, var(--primary) 8%, transparent) 0, transparent 26%),
-    linear-gradient(to bottom, color-mix(in oklab, var(--background) 96%, black 4%), var(--background));
+    radial-gradient(
+      circle at top left,
+      color-mix(in oklab, var(--primary) 8%, transparent) 0,
+      transparent 26%
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in oklab, var(--background) 96%, black 4%),
+      var(--background)
+    );
 }

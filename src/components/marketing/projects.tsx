@@ -6,7 +6,7 @@ import { ProjectGrid } from "./project-grid";
 export function ProjectsSection() {
   return (
     <section id="projetos" className="py-28 md:py-32">
-      <div className="container mx-auto max-w-7xl rounded-[2rem] border border-border/70 bg-card/70 px-6 py-14 shadow-[0_24px_90px_-50px_rgba(0,0,0,0.45)] md:px-8">
+      <div className="container mx-auto max-w-7xl rounded-4xl border border-border/70 bg-card/70 px-6 py-14 shadow-[0_24px_90px_-50px_rgba(0,0,0,0.45)] md:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

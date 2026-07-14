@@ -5,6 +5,7 @@ import { ProcessSection } from "@/components/marketing/process";
 import { ProjectsSection } from "@/components/marketing/projects";
 import { Services } from "@/components/marketing/services";
 import { Testimonials } from "@/components/marketing/testimonials";
+import { BlogSection } from "@/components/marketing/blog";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,8 @@ export default function HomePage() {
       <Services />
 
       <ProjectsSection />
+
+      <BlogSection />
 
       <Testimonials />
 

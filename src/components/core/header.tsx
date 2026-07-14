@@ -12,11 +12,12 @@ export function Header() {
   const toggleMenu = () => setOpen(!open);
 
   const links = [
-    { name: "Serviços", href: "#servicos" },
-    { name: "Projetos", href: "#projetos" },
-    { name: "Depoimentos", href: "#depoimentos" },
-    { name: "Processo", href: "#processo" },
-    { name: "Preços", href: "#precos" },
+    { name: "Serviços", href: "/#servicos" },
+    { name: "Projetos", href: "/#projetos" },
+    { name: "Artigos", href: "/#artigos" },
+    { name: "Depoimentos", href: "/#depoimentos" },
+    { name: "Processo", href: "/#processo" },
+    { name: "Preços", href: "/#precos" },
   ];
 
   return (
