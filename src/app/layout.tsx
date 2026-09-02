@@ -16,13 +16,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gadiego Nogueira — Desenvolvedor Frontend",
+  title: "Gadiego Nogueira | Currículo e Portfólio",
   description:
-    "Desenvolvo sites rápidos, claros e sob medida para pequenas empresas.",
+    "Currículo e portfólio profissional de Gadiego de Jesus Nogueira. Experiência em tecnologia, sistemas, desenvolvimento front-end e mobile, compras e processos operacionais.",
   metadataBase: new URL("https://www.gadiegon.com"),
   openGraph: {
-    title: "Gadiego Nogueira — Desenvolvedor Frontend",
-    description: "Meu portfólio como desenvolvedor frontend está no ar.",
+    title: "Gadiego Nogueira | Currículo e Portfólio",
+    description:
+      "Currículo e portfólio profissional de Gadiego de Jesus Nogueira. Experiência com tecnologia, sistemas, processos e operações.",
     url: "https://www.gadiegon.com",
     siteName: "gadiegon.com",
     images: [
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Gadiego Nogueira — Desenvolvedor Frontend",
+        alt: "Gadiego Nogueira | Currículo e Portfólio",
       },
     ],
     locale: "pt_BR",
@@ -38,8 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gadiego Nogueira — Desenvolvedor Frontend",
-    description: "Meu portfólio como desenvolvedor frontend está no ar.",
+    title: "Gadiego Nogueira | Currículo e Portfólio",
+    description:
+      "Currículo e portfólio profissional de Gadiego de Jesus Nogueira. Experiência com tecnologia, sistemas, processos e operações.",
     images: ["/og-image.png"],
   },
 };

@@ -1,30 +1,21 @@
 import { Hero } from "@/components/core/hero";
-import { FinalCTA } from "@/components/marketing/final-cta";
-import { PricingSection } from "@/components/marketing/pricing";
-import { ProcessSection } from "@/components/marketing/process";
-import { ProjectsSection } from "@/components/marketing/projects";
-import { Services } from "@/components/marketing/services";
-import { Testimonials } from "@/components/marketing/testimonials";
-import { BlogSection } from "@/components/marketing/blog";
+import { AboutSection } from "@/components/resume/about-section";
+import { ExperienceSection } from "@/components/resume/experience-section";
+import { ProjectsSection } from "@/components/resume/projects-section";
+import { SkillsSection } from "@/components/resume/skills-section";
+import { EducationSection } from "@/components/resume/education-section";
+import { ContactSection } from "@/components/resume/contact-section";
 
 export default function HomePage() {
   return (
-    <>
+    <main className="flex flex-col min-h-screen">
       <Hero />
-
-      <Services />
-
+      <AboutSection />
+      <ExperienceSection />
       <ProjectsSection />
-
-      <BlogSection />
-
-      <Testimonials />
-
-      <ProcessSection />
-
-      <PricingSection />
-
-      <FinalCTA />
-    </>
+      <SkillsSection />
+      <EducationSection />
+      <ContactSection />
+    </main>
   );
 }

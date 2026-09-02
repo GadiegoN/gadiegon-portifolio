@@ -40,8 +40,8 @@ export function HeroBackground() {
 
         <defs>
           <linearGradient id="gradientTop" x1="0" y1="0" x2="1440" y2="0">
-            <stop offset="0%" stopColor="#d97706" />
-            <stop offset="100%" stopColor="#b45309" />
+            <stop offset="0%" stopColor="#818cf8" />
+            <stop offset="100%" stopColor="#c084fc" />
           </linearGradient>
 
           <linearGradient
@@ -51,8 +51,8 @@ export function HeroBackground() {
             x2="1440"
             y2="900"
           >
-            <stop offset="0%" stopColor="#f59e0b" />
-            <stop offset="100%" stopColor="#d97706" />
+            <stop offset="0%" stopColor="#38bdf8" />
+            <stop offset="100%" stopColor="#818cf8" />
           </linearGradient>
         </defs>
       </svg>

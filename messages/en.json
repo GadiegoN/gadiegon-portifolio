@@ -1,34 +1,208 @@
 {
-  "Hero": {
-    "headline": "We develop professional, fast, and fully customized systems for your business.",
-    "description": "Clean design, great performance, and clear communication from start to finish. No complications.",
-    "btn_budgets": "Request a quote now",
-    "btn_projects": "View projects"
+  "Header": {
+    "nav_about": "About",
+    "nav_experience": "Experience",
+    "nav_projects": "Projects",
+    "nav_skills": "Skills",
+    "nav_education": "Education",
+    "nav_contact": "Contact",
+    "download_cv": "Resume (PDF)"
   },
-  "Services": {
-    "title": "What I build",
-    "subtitle": "Digital projects built for real use, with focus on flow, interface organization, and consistent day-to-day operation.",
+  "Hero": {
+    "location": "Conquista – MG, Brazil",
+    "availability": "Available for new opportunities",
+    "fullName": "Gadiego de Jesus Nogueira",
+    "headline": "Technology, Systems, Processes & Operations",
+    "description": "Multidisciplinary background combining software engineering (Front-End & Mobile), systems analysis, and hands-on experience in operational processes, document control, and public procurement.",
+    "cta_experience": "View experience",
+    "cta_contact": "Get in touch",
+    "link_linkedin": "LinkedIn",
+    "link_github": "GitHub",
+    "link_download_cv": "Download CV (PDF)"
+  },
+  "About": {
+    "tag": "Overview",
+    "title": "About my career",
+    "description": "I hold a Bachelor's degree in Information Systems and have built a multidisciplinary career combining software development (Front-End and Mobile), technical support, and operational management. This integrated background allows me to understand both the technical architecture of systems and the daily realities of administrative workflows, documentation, and compliance.",
+    "card1_title": "Software Development",
+    "card1_desc": "Hands-on experience developing and maintaining stable Front-End and Mobile interfaces, with a strong focus on usability, reliability, and data integration.",
+    "card2_title": "Processes & Operations",
+    "card2_desc": "Supervision of healthcare procurement, public contract monitoring, administrative workflows, and vendor relationship management in the public sector.",
+    "card3_title": "Systems Analysis & Support",
+    "card3_desc": "User support, issue diagnosis, root-cause investigation, and continuous maintenance of critical corporate platforms.",
+    "card4_title": "Multidisciplinary Profile",
+    "card4_desc": "Proven ability to bridge operational business rules and the technical execution of digital solutions seamlessly."
+  },
+  "Experience": {
+    "tag": "Career",
+    "title": "Work Experience",
+    "subtitle": "Chronological history of roles across software engineering, systems support, and administrative/operational supervision.",
+    "responsibilities_label": "Key responsibilities:",
+    "type_operations": "Operations & Management",
+    "type_development": "Development",
+    "type_systems": "Systems Analysis",
+    "type_administrative": "Administrative",
     "items": [
       {
-        "title": "Interfaces for systems and digital products",
-        "description": "Screens designed for real operation, with clear navigation, strong hierarchy, and focus on what needs to be used every day."
+        "role": "Healthcare Procurement Supervisor",
+        "company": "Conquista City Hall",
+        "period": "Jan 2025 – Sep 2025",
+        "typeKey": "type_operations",
+        "responsibilities": [
+          "Direct handling of administrative processes and strict oversight of public procurement and contracts.",
+          "Organization, filing, and auditing of fiscal documents and internal workflows.",
+          "Vendor negotiations and vendor management, ensuring urgent and ongoing healthcare supply needs are met.",
+          "Operational oversight, workflow coordination, and tracking of administrative deadlines."
+        ]
       },
       {
-        "title": "Mobile applications and experiences",
-        "description": "Applications built for practical use, with consistent flows, readable interfaces, and attention to the user’s routine."
+        "role": "Front-End Developer",
+        "company": "Dyndo",
+        "period": "Jan 2023 – May 2024",
+        "typeKey": "type_development",
+        "responsibilities": [
+          "Development and ongoing maintenance of web applications and enterprise systems.",
+          "Technical issue diagnosis, bug resolution, and user support ticket tracking.",
+          "Integration of responsive user interfaces with back-end APIs and external services.",
+          "Collaborative agile development utilizing Git version control and software engineering best practices."
+        ]
       },
       {
-        "title": "Dashboards, panels, and operational areas",
-        "description": "Structuring areas with data, records, scheduling, customer service, finance, and other central parts of product operation."
+        "role": "Mobile Developer",
+        "company": "Dyndo",
+        "period": "Jan 2022 – Jul 2022",
+        "typeKey": "type_development",
+        "responsibilities": [
+          "Development and maintenance of features for mobile applications.",
+          "Building responsive screens and reusable UI components with focus on user experience.",
+          "Integration with existing back-end services and tracking project milestones."
+        ]
       },
       {
-        "title": "Features, rules, and integrations",
-        "description": "Building flows that depend on authentication, synchronization, data persistence, API consumption, and consistent application behavior."
+        "role": "Systems Analyst",
+        "company": "Bravo Logistics Services",
+        "period": "Oct 2020 – Dec 2021",
+        "typeKey": "type_systems",
+        "responsibilities": [
+          "Maintenance and technical support for internal corporate logistics platforms.",
+          "Customer service and ticket resolution for system users across operations.",
+          "Identification, reproduction, and resolution of reported operational anomalies.",
+          "Technical support in specifying and deploying continuous system improvements."
+        ]
       },
       {
-        "title": "Fixes, maintenance, and product evolution",
-        "description": "Improvements to existing projects, issue fixing, interface refinement, and continuity in system development."
+        "role": "Mobile Developer",
+        "company": "Dyndo",
+        "period": "Jun 2019 – Oct 2020",
+        "typeKey": "type_development",
+        "responsibilities": [
+          "Active involvement in the end-to-end development and evolution of mobile applications.",
+          "Screen flow construction and interactive UI component development.",
+          "Participation throughout the mobile application lifecycle through testing and app deployment."
+        ]
+      },
+      {
+        "role": "Administrative Intern",
+        "company": "SAAE",
+        "period": "May 2018 – Dec 2018",
+        "typeKey": "type_administrative",
+        "responsibilities": [
+          "In-person customer service, answering inquiries and resolving citizen requests.",
+          "Support with administrative routines, document archiving, and record keeping.",
+          "Execution of diverse daily administrative and operational duties within the utility."
+        ]
       }
     ]
+  },
+  "Projects": {
+    "tag": "Portfolio",
+    "title": "Selected Projects",
+    "subtitle": "Applications engineered with a focus on real-world problem solving, stability, and efficient architecture.",
+    "featured_badge": "Featured Project",
+    "featured_type": "Offline-First Mobile App",
+    "problem_label": "Problem solved:",
+    "participation_label": "Contribution:",
+    "features_label": "Key implementation highlights:",
+    "btn_download_apk": "Download APK (Android)",
+    "btn_details": "View project details",
+    "btn_visit": "Visit Live Demo",
+    "link_details": "Details →",
+    "showup": {
+      "title": "ShowUp — Appointment & Client Management App",
+      "summary": "Mobile application engineered for service professionals, combining intelligent scheduling based on open slots, client management, and daily financial records.",
+      "problem": "Need to manage appointments and clients on the go without relying on a persistent internet connection.",
+      "participation": "Full mobile app engineering with offline-first architecture, local persistence in SQLite, and synchronization with Supabase.",
+      "features": [
+        "100% offline operation with local SQLite storage",
+        "Bidirectional sync with Supabase when online",
+        "Dynamic calendar based on availability and open time slots",
+        "Client directory and service financial tracking"
+      ]
+    },
+    "snackfy": {
+      "title": "Snackfy",
+      "category": "Web Application",
+      "summary": "Minimalist responsive digital catalog for friction-free product and menu showcases."
+    },
+    "guide_city": {
+      "title": "Guide City",
+      "category": "Web Application",
+      "summary": "Municipal directory and city guide for discovering local venues, services, and public utilities."
+    },
+    "futpro": {
+      "title": "FutPro",
+      "category": "Web Application",
+      "summary": "Fast sports landing page focused on real-time game schedules, tables, and quick navigation."
+    },
+    "saas_agenda": {
+      "title": "SaaS Agenda",
+      "category": "Web Application",
+      "summary": "Conceptual landing page and product showcase for automated online booking systems."
+    },
+    "organize_birthday": {
+      "title": "Organize Birthday",
+      "category": "Web Application",
+      "summary": "Clean interactive tool for event checklist organization and guest list tracking."
+    }
+  },
+  "Skills": {
+    "tag": "Skills",
+    "title": "Skills & Technologies",
+    "subtitle": "Structured overview of confirmed skills across engineering, systems analysis, and operations.",
+    "cat1_title": "Technology & Development",
+    "cat1_desc": "Core stack used to build modern, reliable, and scalable web and mobile applications.",
+    "cat2_title": "Systems & Support",
+    "cat2_desc": "Experience with tier 1 & 2 support, issue diagnosis, and software maintenance lifecycles.",
+    "cat3_title": "Processes, Procurement & Operations",
+    "cat3_desc": "Hands-on experience with administrative procedures, public bidding, and vendor management.",
+    "cat4_title": "Professional & Interpersonal",
+    "cat4_desc": "Collaboration, communication, and systematic problem-solving methods in team environments."
+  },
+  "Education": {
+    "tag": "Education",
+    "title": "Academic Background",
+    "subtitle": "Theoretical and practical foundation in designing, modeling, and engineering information systems.",
+    "status": "Completed",
+    "degree": "Bachelor of Science in Information Systems",
+    "institution": "FAZU — Associated Colleges of Uberaba",
+    "completed": "Graduated in 2020",
+    "location": "Uberaba – MG, Brazil",
+    "description": "Curriculum focused on software engineering, database modeling, systems architecture, IT management, and business process modeling."
+  },
+  "Contact": {
+    "tag": "Get in Touch",
+    "title": "Contact Me",
+    "description": "I am open to professional opportunities, new projects, or networking. Feel free to connect or drop me a message on LinkedIn or WhatsApp.",
+    "location": "Conquista – MG, Brazil | Available for On-Site or Remote roles",
+    "action_linkedin": "View profile",
+    "action_github": "View repositories",
+    "action_whatsapp": "Start WhatsApp chat",
+    "action_cv": "Download resume"
+  },
+  "Footer": {
+    "fullName": "Gadiego de Jesus Nogueira",
+    "description": "Professional resume and digital portfolio. Technology, systems, operational workflows, and procurement.",
+    "download_pdf": "Download PDF",
+    "copyright": "© {year} Gadiego Nogueira. Conquista – MG, Brazil."
   }
 }

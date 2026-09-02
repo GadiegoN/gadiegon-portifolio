@@ -1,3 +1,8 @@
+export interface GlossaryItem {
+  term: string;
+  definition: string;
+}
+
 export interface Article {
   slug: string;
   title: string;
@@ -7,4 +12,5 @@ export interface Article {
   publishedAt: string;
   featured: boolean;
   tags: string[];
+  glossary?: GlossaryItem[];
 }

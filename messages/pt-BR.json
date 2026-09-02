@@ -1,34 +1,208 @@
 {
-  "Hero": {
-    "headline": "Desenvolvemos sistemas profissionais, rápidos e feitos sob medida para o seu negócio.",
-    "description": "Design limpo, boa performance e comunicação clara do começo ao fim. Sem complicação.",
-    "btn_budgets": "Quero um orçamento agora",
-    "btn_projects": "Ver projetos"
+  "Header": {
+    "nav_about": "Sobre",
+    "nav_experience": "Experiência",
+    "nav_projects": "Projetos",
+    "nav_skills": "Competências",
+    "nav_education": "Formação",
+    "nav_contact": "Contato",
+    "download_cv": "Currículo (PDF)"
   },
-  "Services": {
-    "title": "O que eu desenvolvo",
-    "subtitle": "Projetos digitais construídos para uso real, com foco em fluxo, organização da interface e funcionamento consistente no dia a dia.",
+  "Hero": {
+    "location": "Conquista – MG",
+    "availability": "Disponível para novas oportunidades",
+    "fullName": "Gadiego de Jesus Nogueira",
+    "headline": "Tecnologia, Sistemas, Processos & Operações",
+    "description": "Trajetória multidisciplinar unindo desenvolvimento de software (Front-End & Mobile), análise de sistemas e vivência prática em processos operacionais, controle documental e gestão de compras públicas.",
+    "cta_experience": "Ver experiência",
+    "cta_contact": "Entrar em contato",
+    "link_linkedin": "LinkedIn",
+    "link_github": "GitHub",
+    "link_download_cv": "Baixar CV (PDF)"
+  },
+  "About": {
+    "tag": "Apresentação",
+    "title": "Sobre minha trajetória",
+    "description": "Possuo formação em Sistemas de Informação e uma trajetória que combina desenvolvimento de software (Front-End e Mobile), suporte técnico e gestão operacional. Essa vivência integrada me permite compreender tanto a lógica técnica de sistemas quanto as exigências práticas de processos, documentação e rotinas do dia a dia.",
+    "card1_title": "Desenvolvimento de Aplicações",
+    "card1_desc": "Experiência prática na criação e evolução de interfaces Front-End e Mobile, com atenção à estabilidade, usabilidade e integração de dados.",
+    "card2_title": "Processos & Operações",
+    "card2_desc": "Atuação na supervisão de compras, acompanhamento de contratos, rotinas administrativas e relacionamento com fornecedores no setor público.",
+    "card3_title": "Análise & Suporte a Sistemas",
+    "card3_desc": "Atendimento a demandas de usuários, identificação de causas-raiz, resolução de problemas e manutenção contínua de plataformas.",
+    "card4_title": "Perfil Multidisciplinar",
+    "card4_desc": "Capacidade de transitar com facilidade entre regras de negócio operacionais e a implementação técnica de soluções digitais."
+  },
+  "Experience": {
+    "tag": "Trajetória",
+    "title": "Experiência Profissional",
+    "subtitle": "Histórico cronológico de atuação em desenvolvimento de software, suporte a sistemas e supervisão operacional e administrativa.",
+    "responsibilities_label": "Principais responsabilidades:",
+    "type_operations": "Operações & Gestão",
+    "type_development": "Desenvolvimento",
+    "type_systems": "Análise & Sistemas",
+    "type_administrative": "Administrativo",
     "items": [
       {
-        "title": "Interfaces para sistemas e produtos digitais",
-        "description": "Telas pensadas para operação real, com navegação clara, hierarquia bem resolvida e foco no que precisa ser usado no dia a dia."
+        "role": "Supervisor de Compras da Saúde",
+        "company": "Prefeitura de Conquista",
+        "period": "Jan 2025 – Set 2025",
+        "typeKey": "type_operations",
+        "responsibilities": [
+          "Atuação direta em processos administrativos e acompanhamento rigoroso de compras e contratos públicos.",
+          "Organização, arquivamento e controle de documentos fiscais e processos internos.",
+          "Acompanhamento e negociação operacional com fornecedores, atendendo às demandas emergenciais e contínuas do setor de saúde.",
+          "Controle operacional, gestão de fluxo de trabalho e acompanhamento de rotinas administrativas."
+        ]
       },
       {
-        "title": "Aplicativos e experiências mobile",
-        "description": "Aplicações voltadas para uso prático, com fluxo consistente, boa leitura da interface e atenção à rotina de quem usa."
+        "role": "Desenvolvedor Front-End",
+        "company": "Dyndo",
+        "period": "Jan 2023 – Mai 2024",
+        "typeKey": "type_development",
+        "responsibilities": [
+          "Desenvolvimento e manutenção contínua de sistemas web e aplicações corporativas.",
+          "Diagnóstico e correção de falhas técnicas e acompanhamento de chamados de clientes.",
+          "Integração de interfaces com APIs e serviços back-end.",
+          "Trabalho em equipe ágil utilizando controle de versão e boas práticas de engenharia de software."
+        ]
       },
       {
-        "title": "Dashboards, painéis e áreas operacionais",
-        "description": "Estruturação de áreas com dados, cadastros, agenda, atendimento, financeiro e outras partes centrais da operação do produto."
+        "role": "Desenvolvedor Mobile",
+        "company": "Dyndo",
+        "period": "Jan 2022 – Jul 2022",
+        "typeKey": "type_development",
+        "responsibilities": [
+          "Desenvolvimento e manutenção de funcionalidades para aplicações móveis.",
+          "Criação de telas e componentes responsivos com foco na experiência do usuário.",
+          "Integração com serviços existentes e acompanhamento das etapas de entrega do projeto."
+        ]
       },
       {
-        "title": "Funcionalidades, regras e integrações",
-        "description": "Construção de fluxos que dependem de autenticação, sincronização, persistência de dados, consumo de APIs e comportamento consistente da aplicação."
+        "role": "Analista de Sistemas",
+        "company": "Bravo Serviços Logísticos",
+        "period": "Out 2020 – Dez 2021",
+        "typeKey": "type_systems",
+        "responsibilities": [
+          "Manutenção e suporte a sistemas internos da operação logística corporativa.",
+          "Atendimento a chamados e suporte direto às necessidades dos usuários dos sistemas.",
+          "Identificação, reprodução e correção de anomalias operacionais reportadas.",
+          "Apoio técnico na especificação e implementação de melhorias contínuas nas ferramentas."
+        ]
       },
       {
-        "title": "Ajustes, manutenção e evolução de produto",
-        "description": "Melhorias em projetos já existentes, correção de problemas, refinamento de interface e continuidade no desenvolvimento do sistema."
+        "role": "Desenvolvedor Mobile",
+        "company": "Dyndo",
+        "period": "Jun 2019 – Out 2020",
+        "typeKey": "type_development",
+        "responsibilities": [
+          "Participação ativa na construção e evolução de aplicativos mobile.",
+          "Construção de fluxos de telas e componentes visuais.",
+          "Acompanhamento do ciclo de vida das aplicações até a publicação e lançamento."
+        ]
+      },
+      {
+        "role": "Estagiário Administrativo",
+        "company": "SAAE",
+        "period": "Mai 2018 – Dez 2018",
+        "typeKey": "type_administrative",
+        "responsibilities": [
+          "Atendimento presencial e suporte ao público para esclarecimento de dúvidas e solicitações.",
+          "Apoio em rotinas administrativas, arquivamento e conferência de dados.",
+          "Execução de atividades administrativas e operacionais diversificadas da autarquia."
+        ]
       }
     ]
+  },
+  "Projects": {
+    "tag": "Portfólio",
+    "title": "Projetos Selecionados",
+    "subtitle": "Aplicações desenvolvidas com foco em resolução prática de problemas, estabilidade e arquitetura eficiente.",
+    "featured_badge": "Projeto em Destaque",
+    "featured_type": "Mobile Offline-First",
+    "problem_label": "Desafio resolvido:",
+    "participation_label": "Participação:",
+    "features_label": "Destaques da implementação:",
+    "btn_download_apk": "Baixar APK (Android)",
+    "btn_details": "Ver detalhes do projeto",
+    "btn_visit": "Visitar demonstração",
+    "link_details": "Detalhes →",
+    "showup": {
+      "title": "ShowUp — App de Gestão & Agendamentos",
+      "summary": "Aplicativo móvel focado no atendimento diário de profissionais autônomos, unindo agendamento com horários vagos, gestão de clientes e controle financeiro básico.",
+      "problem": "Necessidade de gerenciar atendimentos e clientes na rua sem depender de conexão contínua com a internet.",
+      "participation": "Desenvolvimento da aplicação mobile com arquitetura offline-first, banco de dados local em SQLite e sincronização com Supabase.",
+      "features": [
+        "Operação 100% offline com persistência local em SQLite",
+        "Sincronização bidirecional com Supabase",
+        "Agenda dinâmica baseada em disponibilidade e horários vagos",
+        "Controle de clientes e histórico financeiro por atendimento"
+      ]
+    },
+    "snackfy": {
+      "title": "Snackfy",
+      "category": "Aplicação Web",
+      "summary": "Catálogo digital responsivo e direto ao ponto para apresentação de cardápios e produtos sem atritos."
+    },
+    "guide_city": {
+      "title": "Guide City",
+      "category": "Aplicação Web",
+      "summary": "Portal municipal e turístico para descoberta de locais, serviços e utilidades públicas."
+    },
+    "futpro": {
+      "title": "FutPro",
+      "category": "Aplicação Web",
+      "summary": "Interface esportiva ágil voltada para consumo de tabelas, partidas e informações rápidas."
+    },
+    "saas_agenda": {
+      "title": "SaaS Agenda",
+      "category": "Aplicação Web",
+      "summary": "Interface conceitual para plataforma de agendamentos online e gestão de horários para serviços."
+    },
+    "organize_birthday": {
+      "title": "Organize Birthday",
+      "category": "Aplicação Web",
+      "summary": "Página interativa para planejamento e organização visual de aniversários e eventos."
+    }
+  },
+  "Skills": {
+    "tag": "Habilidades",
+    "title": "Competências & Tecnologias",
+    "subtitle": "Apresentação estruturada por grupos de competências confirmadas em tecnologia, sistemas e processos.",
+    "cat1_title": "Tecnologia & Desenvolvimento",
+    "cat1_desc": "Tecnologias utilizadas na construção de aplicações web e mobile modernas e estáveis.",
+    "cat2_title": "Sistemas & Suporte",
+    "cat2_desc": "Vivência em suporte de primeiro e segundo nível, sustentação e ciclo de software.",
+    "cat3_title": "Processos, Compras & Operações",
+    "cat3_desc": "Experiência prática com rotinas administrativas estruturadas e compras governamentais.",
+    "cat4_title": "Competências Profissionais",
+    "cat4_desc": "Habilidades interpessoais e método de trabalho no dia a dia com equipes e clientes."
+  },
+  "Education": {
+    "tag": "Educação",
+    "title": "Formação Acadêmica",
+    "subtitle": "Base teórica e prática na concepção, modelagem e desenvolvimento de sistemas de informação.",
+    "status": "Concluído",
+    "degree": "Bacharelado em Sistemas de Informação",
+    "institution": "FAZU — Faculdades Associadas de Uberaba",
+    "completed": "Concluído em 2020",
+    "location": "Uberaba – MG",
+    "description": "Formação com foco em engenharia de software, banco de dados, arquitetura de sistemas, gestão de tecnologia e modelagem de processos organizacionais."
+  },
+  "Contact": {
+    "tag": "Comunicação",
+    "title": "Entre em Contato",
+    "description": "Estou à disposição para oportunidades profissionais, novos projetos ou troca de ideias. Fique à vontade para me enviar uma mensagem pelo LinkedIn ou WhatsApp.",
+    "location": "Conquista – MG | Atuação Presencial ou Remota",
+    "action_linkedin": "Acessar perfil",
+    "action_github": "Ver repositórios",
+    "action_whatsapp": "Iniciar conversa",
+    "action_cv": "Baixar currículo"
+  },
+  "Footer": {
+    "fullName": "Gadiego de Jesus Nogueira",
+    "description": "Currículo profissional e portfólio digital. Tecnologia, sistemas, processos operacionais e compras.",
+    "download_pdf": "Baixar PDF",
+    "copyright": "© {year} Gadiego Nogueira. Conquista – MG."
   }
 }
