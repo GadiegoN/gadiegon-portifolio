@@ -5,6 +5,7 @@
     "nav_projects": "Projetos",
     "nav_skills": "Competências",
     "nav_education": "Formação",
+    "nav_blog": "Blog",
     "nav_contact": "Contato",
     "download_cv": "Currículo (PDF)"
   },
@@ -127,6 +128,10 @@
     "btn_details": "Ver detalhes do projeto",
     "btn_visit": "Visitar demonstração",
     "link_details": "Detalhes →",
+    "github_section_title": "Outros Projetos & Repositórios",
+    "github_section_desc": "Projetos sincronizados automaticamente através da API do GitHub com a tag de portfólio.",
+    "github_code_btn": "Código",
+    "github_demo_btn": "Live Demo",
     "showup": {
       "title": "ShowUp — App de Gestão & Agendamentos",
       "summary": "Aplicativo móvel focado no atendimento diário de profissionais autônomos, unindo agendamento com horários vagos, gestão de clientes e controle financeiro básico.",
@@ -179,25 +184,69 @@
     "cat4_desc": "Habilidades interpessoais e método de trabalho no dia a dia com equipes e clientes."
   },
   "Education": {
-    "tag": "Educação",
-    "title": "Formação Acadêmica",
-    "subtitle": "Base teórica e prática na concepção, modelagem e desenvolvimento de sistemas de informação.",
+    "tag": "Educação & Aprendizado",
+    "title": "Formação & Certificações",
+    "subtitle": "Base acadêmica sólida e aprimoramento contínuo em tecnologias modernas.",
     "status": "Concluído",
     "degree": "Bacharelado em Sistemas de Informação",
     "institution": "FAZU — Faculdades Associadas de Uberaba",
     "completed": "Concluído em 2020",
     "location": "Uberaba – MG",
-    "description": "Formação com foco em engenharia de software, banco de dados, arquitetura de sistemas, gestão de tecnologia e modelagem de processos organizacionais."
+    "description": "Formação com foco em engenharia de software, banco de dados, arquitetura de sistemas, gestão de tecnologia e modelagem de processos organizacionais.",
+    "certifications_title": "Cursos & Certificações Complementares",
+    "certifications": [
+      {
+        "title": "Desenvolvimento Front-End com React & Next.js",
+        "issuer": "Especialização Contínua",
+        "period": "2023 – 2024",
+        "description": "Next.js App Router, Server Components, TypeScript avançado, Tailwind CSS e consumo de APIs."
+      },
+      {
+        "title": "Desenvolvimento Mobile com React Native & SQLite",
+        "issuer": "Especialização Contínua",
+        "period": "2024",
+        "description": "Arquitetura offline-first com SQLite, sincronização assíncrona e integração com Supabase."
+      },
+      {
+        "title": "Gestão de Processos e Rotinas Administrativas",
+        "issuer": "Capacitação Profissional",
+        "period": "2021 – 2022",
+        "description": "Fluxos operacionais, controle de documentos técnicos, compliance e rotinas de compras públicas."
+      }
+    ]
+  },
+  "Blog": {
+    "tag": "Artigos",
+    "title": "Últimas Publicações",
+    "subtitle": "Conteúdos técnicos sobre desenvolvimento de software, inteligência artificial e arquitetura.",
+    "view_all": "Ver todos os artigos",
+    "read_more": "Ler artigo",
+    "back_home": "Voltar para o Início",
+    "published_at": "Publicado em"
   },
   "Contact": {
     "tag": "Comunicação",
     "title": "Entre em Contato",
-    "description": "Estou à disposição para oportunidades profissionais, novos projetos ou troca de ideias. Fique à vontade para me enviar uma mensagem pelo LinkedIn ou WhatsApp.",
+    "description": "Estou à disposição para oportunidades profissionais, novas vagas ou projetos. Envie uma mensagem direta abaixo ou fale comigo pelos canais oficiais.",
     "location": "Conquista – MG | Atuação Presencial ou Remota",
     "action_linkedin": "Acessar perfil",
     "action_github": "Ver repositórios",
     "action_whatsapp": "Iniciar conversa",
-    "action_cv": "Baixar currículo"
+    "action_cv": "Baixar currículo",
+    "form_name_label": "Seu Nome",
+    "form_name_placeholder": "Como posso te chamar?",
+    "form_email_label": "Seu E-mail ou Telefone",
+    "form_email_placeholder": "seuemail@empresa.com ou (00) 00000-0000",
+    "form_message_label": "Mensagem",
+    "form_message_placeholder": "Conte um pouco sobre a oportunidade ou projeto...",
+    "form_submit_btn": "Enviar Mensagem",
+    "form_sending_btn": "Enviando mensagem...",
+    "form_success_title": "Mensagem enviada com sucesso!",
+    "form_success_desc": "Obrigado pelo contato. Responderei o mais rápido possível.",
+    "form_error_title": "Erro ao enviar",
+    "form_error_desc": "Ocorreu um erro ao enviar a mensagem. Por favor, tente pelo WhatsApp ou LinkedIn.",
+    "copy_email_btn": "Copiar E-mail",
+    "copy_email_success": "E-mail copiado para a área de transferência!"
   },
   "Footer": {
     "fullName": "Gadiego de Jesus Nogueira",

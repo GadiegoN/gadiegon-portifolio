@@ -50,6 +50,9 @@ export function Footer() {
           <a href="#formacao" className="transition hover:text-foreground">
             {tHeader("nav_education")}
           </a>
+          <a href="/blog" className="transition hover:text-foreground">
+            {tHeader("nav_blog")}
+          </a>
           <a href="#contato" className="transition hover:text-foreground">
             {tHeader("nav_contact")}
           </a>

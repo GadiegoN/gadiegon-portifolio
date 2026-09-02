@@ -5,6 +5,7 @@
     "nav_projects": "Projects",
     "nav_skills": "Skills",
     "nav_education": "Education",
+    "nav_blog": "Blog",
     "nav_contact": "Contact",
     "download_cv": "Resume (PDF)"
   },
@@ -127,6 +128,10 @@
     "btn_details": "View project details",
     "btn_visit": "Visit Live Demo",
     "link_details": "Details →",
+    "github_section_title": "Other Projects & Repositories",
+    "github_section_desc": "Repositories automatically synchronized via the GitHub API matching portfolio tags.",
+    "github_code_btn": "Code",
+    "github_demo_btn": "Live Demo",
     "showup": {
       "title": "ShowUp — Appointment & Client Management App",
       "summary": "Mobile application engineered for service professionals, combining intelligent scheduling based on open slots, client management, and daily financial records.",
@@ -138,31 +143,6 @@
         "Dynamic calendar based on availability and open time slots",
         "Client directory and service financial tracking"
       ]
-    },
-    "snackfy": {
-      "title": "Snackfy",
-      "category": "Web Application",
-      "summary": "Minimalist responsive digital catalog for friction-free product and menu showcases."
-    },
-    "guide_city": {
-      "title": "Guide City",
-      "category": "Web Application",
-      "summary": "Municipal directory and city guide for discovering local venues, services, and public utilities."
-    },
-    "futpro": {
-      "title": "FutPro",
-      "category": "Web Application",
-      "summary": "Fast sports landing page focused on real-time game schedules, tables, and quick navigation."
-    },
-    "saas_agenda": {
-      "title": "SaaS Agenda",
-      "category": "Web Application",
-      "summary": "Conceptual landing page and product showcase for automated online booking systems."
-    },
-    "organize_birthday": {
-      "title": "Organize Birthday",
-      "category": "Web Application",
-      "summary": "Clean interactive tool for event checklist organization and guest list tracking."
     }
   },
   "Skills": {
@@ -179,25 +159,69 @@
     "cat4_desc": "Collaboration, communication, and systematic problem-solving methods in team environments."
   },
   "Education": {
-    "tag": "Education",
-    "title": "Academic Background",
-    "subtitle": "Theoretical and practical foundation in designing, modeling, and engineering information systems.",
+    "tag": "Education & Learning",
+    "title": "Education & Certifications",
+    "subtitle": "Solid academic foundation and continuous enhancement in modern technologies.",
     "status": "Completed",
     "degree": "Bachelor of Science in Information Systems",
     "institution": "FAZU — Associated Colleges of Uberaba",
     "completed": "Graduated in 2020",
     "location": "Uberaba – MG, Brazil",
-    "description": "Curriculum focused on software engineering, database modeling, systems architecture, IT management, and business process modeling."
+    "description": "Curriculum focused on software engineering, database modeling, systems architecture, IT management, and business process modeling.",
+    "certifications_title": "Courses & Certifications",
+    "certifications": [
+      {
+        "title": "Modern Front-End Development with React & Next.js",
+        "issuer": "Continuous Specialization",
+        "period": "2023 – 2024",
+        "description": "App Router architecture, Server Components, advanced TypeScript, Tailwind CSS, and REST API integration."
+      },
+      {
+        "title": "Mobile Development with React Native & SQLite",
+        "issuer": "Continuous Specialization",
+        "period": "2024",
+        "description": "Native apps, offline-first local persistence with SQLite, and cloud synchronization with Supabase."
+      },
+      {
+        "title": "Process Management & Administrative Workflows",
+        "issuer": "Professional Training",
+        "period": "2021 – 2022",
+        "description": "Operational workflows, technical documentation control, compliance, and public procurement procedures."
+      }
+    ]
+  },
+  "Blog": {
+    "tag": "Articles",
+    "title": "Latest Publications",
+    "subtitle": "Technical insights on software engineering, artificial intelligence, and architecture.",
+    "view_all": "View all articles",
+    "read_more": "Read article",
+    "back_home": "Back to Home",
+    "published_at": "Published on"
   },
   "Contact": {
     "tag": "Get in Touch",
     "title": "Contact Me",
-    "description": "I am open to professional opportunities, new projects, or networking. Feel free to connect or drop me a message on LinkedIn or WhatsApp.",
+    "description": "I am open to professional opportunities, new roles, or technical collaboration. Send a direct message below or reach out via official channels.",
     "location": "Conquista – MG, Brazil | Available for On-Site or Remote roles",
     "action_linkedin": "View profile",
     "action_github": "View repositories",
     "action_whatsapp": "Start WhatsApp chat",
-    "action_cv": "Download resume"
+    "action_cv": "Download resume",
+    "form_name_label": "Your Name",
+    "form_name_placeholder": "What's your name?",
+    "form_email_label": "Your Email or Phone",
+    "form_email_placeholder": "yourname@company.com or phone number",
+    "form_message_label": "Message",
+    "form_message_placeholder": "Tell me a little about the opportunity or project...",
+    "form_submit_btn": "Send Message",
+    "form_sending_btn": "Sending message...",
+    "form_success_title": "Message sent successfully!",
+    "form_success_desc": "Thank you for reaching out. I will get back to you shortly.",
+    "form_error_title": "Error sending message",
+    "form_error_desc": "There was an error submitting your message. Please try via WhatsApp or LinkedIn.",
+    "copy_email_btn": "Copy Email",
+    "copy_email_success": "Email copied to clipboard!"
   },
   "Footer": {
     "fullName": "Gadiego de Jesus Nogueira",

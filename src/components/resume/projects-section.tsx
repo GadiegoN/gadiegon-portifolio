@@ -2,62 +2,28 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink, Download, Smartphone, Globe, Check } from "lucide-react";
+import {
+  ExternalLink,
+  Download,
+  Smartphone,
+  Check,
+  Github,
+  Star,
+  Code2,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
+import { GitHubRepo } from "@/lib/github";
 
-export function ProjectsSection() {
+interface ProjectsSectionProps {
+  githubProjects?: GitHubRepo[];
+}
+
+export function ProjectsSection({
+  githubProjects = [],
+}: ProjectsSectionProps) {
   const t = useTranslations("Projects");
-
   const showupFeatures = t.raw("showup.features") as string[];
-
-  const secondaryProjects = [
-    {
-      slug: "snackfy",
-      title: t("snackfy.title"),
-      category: t("snackfy.category"),
-      summary: t("snackfy.summary"),
-      technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
-      image: "/projects/snackfy.png",
-      url: "https://snackfy.vercel.app/",
-    },
-    {
-      slug: "guide-city",
-      title: t("guide_city.title"),
-      category: t("guide_city.category"),
-      summary: t("guide_city.summary"),
-      technologies: ["Next.js", "React", "Tailwind CSS"],
-      image: "/projects/guide-city.png",
-      url: "https://guide-city.vercel.app/",
-    },
-    {
-      slug: "futpro",
-      title: t("futpro.title"),
-      category: t("futpro.category"),
-      summary: t("futpro.summary"),
-      technologies: ["Next.js", "React", "Tailwind CSS"],
-      image: "/projects/futpro.png",
-      url: "https://fut-pro-plum.vercel.app/",
-    },
-    {
-      slug: "saas-agenda",
-      title: t("saas_agenda.title"),
-      category: t("saas_agenda.category"),
-      summary: t("saas_agenda.summary"),
-      technologies: ["Next.js", "React", "Tailwind CSS"],
-      image: "/projects/saas-agenda.png",
-      url: "https://saas-agenda.vercel.app/",
-    },
-    {
-      slug: "organize-birthday",
-      title: t("organize_birthday.title"),
-      category: t("organize_birthday.category"),
-      summary: t("organize_birthday.summary"),
-      technologies: ["Next.js", "React", "CSS"],
-      image: "/projects/organize-birthday.png",
-      url: "https://organize-birthday.vercel.app/",
-    },
-  ];
 
   return (
     <section id="projetos" className="py-20 md:py-28 border-t border-border/60">
@@ -102,7 +68,8 @@ export function ProjectsSection() {
                     <strong>{t("problem_label")}</strong> {t("showup.problem")}
                   </p>
                   <p className="text-muted-foreground">
-                    <strong>{t("participation_label")}</strong> {t("showup.participation")}
+                    <strong>{t("participation_label")}</strong>{" "}
+                    {t("showup.participation")}
                   </p>
                 </div>
 
@@ -123,7 +90,13 @@ export function ProjectsSection() {
 
               <div className="mt-6 pt-5 border-t border-border/60">
                 <div className="flex flex-wrap gap-1.5 mb-5">
-                  {["React Native", "TypeScript", "SQLite", "Supabase", "Offline-First"].map((tech) => (
+                  {[
+                    "React Native",
+                    "TypeScript",
+                    "SQLite",
+                    "Supabase",
+                    "Offline-First",
+                  ].map((tech) => (
                     <span
                       key={tech}
                       className="rounded-md border border-border/70 bg-muted/50 px-2.5 py-1 text-xs font-medium text-muted-foreground"
@@ -141,9 +114,7 @@ export function ProjectsSection() {
                     </a>
                   </Button>
                   <Button asChild size="sm" variant="outline">
-                    <Link href="/projetos/showup">
-                      {t("btn_details")}
-                    </Link>
+                    <Link href="/projetos/showup">{t("btn_details")}</Link>
                   </Button>
                 </div>
               </div>
@@ -161,70 +132,92 @@ export function ProjectsSection() {
           </div>
         </div>
 
-        {/* Demais Projetos */}
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {secondaryProjects.map((project) => (
-            <div
-              key={project.slug}
-              className="flex flex-col justify-between rounded-2xl border border-border/70 bg-card p-5 shadow-xs transition hover:border-border hover:shadow-sm"
-            >
-              <div>
-                <div className="relative h-44 w-full overflow-hidden rounded-xl border border-border/60 bg-muted/20 mb-4">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition duration-300 hover:scale-102"
-                  />
-                </div>
-
-                <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-1.5">
-                  <Globe size={13} className="text-primary" />
-                  <span>{project.category}</span>
-                </div>
-
-                <h4 className="text-lg font-bold text-foreground">
-                  {project.title}
-                </h4>
-
-                <p className="mt-2 text-xs leading-relaxed text-muted-foreground line-clamp-3">
-                  {project.summary}
-                </p>
+        {/* Projetos Dinâmicos do GitHub */}
+        {githubProjects.length > 0 && (
+          <div className="mt-16">
+            <div className="flex flex-col gap-2 mb-8">
+              <div className="flex items-center gap-2">
+                <Github size={18} className="text-primary" />
+                <h3 className="text-xl font-bold tracking-tight text-foreground md:text-2xl">
+                  {t("github_section_title")}
+                </h3>
               </div>
-
-              <div className="mt-5 border-t border-border/50 pt-4">
-                <div className="flex flex-wrap gap-1 mb-4">
-                  {project.technologies.slice(0, 3).map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded bg-muted/70 px-2 py-0.5 text-[11px] font-medium text-muted-foreground"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-primary transition hover:underline"
-                  >
-                    {t("btn_visit")}
-                    <ExternalLink size={13} />
-                  </a>
-                  <Link
-                    href={`/projetos/${project.slug}`}
-                    className="text-xs text-muted-foreground transition hover:text-foreground"
-                  >
-                    {t("link_details")}
-                  </Link>
-                </div>
-              </div>
+              <p className="text-xs text-muted-foreground">
+                {t("github_section_desc")}
+              </p>
             </div>
-          ))}
-        </div>
+
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {githubProjects.map((repo) => (
+                <div
+                  key={repo.id}
+                  className="flex flex-col justify-between rounded-2xl border border-border/70 bg-card p-5 shadow-xs transition hover:border-border hover:shadow-sm"
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-primary">
+                        <Code2 size={14} />
+                        <span>{repo.language || "Código"}</span>
+                      </div>
+                      {repo.stargazers_count > 0 && (
+                        <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                          <Star size={12} className="text-amber-500 fill-amber-500" />
+                          <span>{repo.stargazers_count}</span>
+                        </div>
+                      )}
+                    </div>
+
+                    <h4 className="text-base font-bold text-foreground line-clamp-1">
+                      {repo.formattedTitle}
+                    </h4>
+
+                    <p className="mt-2 text-xs leading-relaxed text-muted-foreground line-clamp-3">
+                      {repo.description ||
+                        "Repositório de código com arquitetura moderna e boas práticas de desenvolvimento."}
+                    </p>
+
+                    {repo.topics.length > 0 && (
+                      <div className="mt-4 flex flex-wrap gap-1">
+                        {repo.topics.slice(0, 3).map((topic) => (
+                          <span
+                            key={topic}
+                            className="rounded bg-muted/70 px-2 py-0.5 text-[10px] font-medium text-muted-foreground"
+                          >
+                            #{topic}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="mt-5 border-t border-border/50 pt-4 flex items-center justify-between gap-2">
+                    <a
+                      href={repo.html_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground transition hover:text-foreground"
+                    >
+                      <Github size={14} />
+                      <span>{t("github_code_btn")}</span>
+                    </a>
+
+                    {repo.homepage && (
+                      <a
+                        href={repo.homepage}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-primary transition hover:underline"
+                      >
+                        <span>{t("github_demo_btn")}</span>
+                        <ExternalLink size={13} />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

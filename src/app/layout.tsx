@@ -9,6 +9,7 @@ import { Header } from "@/components/core/header";
 import { Analytics } from "@vercel/analytics/next";
 import { getMessages, getLocale, getTimeZone } from "next-intl/server";
 import { IntlProvider } from "@/components/providers/intl-provider";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -73,7 +74,7 @@ export default async function RootLayout({
             {children}
 
             <Footer />
-
+            <Toaster richColors position="bottom-right" />
             <Analytics />
             <Script
               id="meta-pixel"

@@ -21,6 +21,7 @@ export function Header() {
     { name: t("nav_projects"), href: "/#projetos" },
     { name: t("nav_skills"), href: "/#competencias" },
     { name: t("nav_education"), href: "/#formacao" },
+    { name: t("nav_blog"), href: "/blog" },
     { name: t("nav_contact"), href: "/#contato" },
   ];
 

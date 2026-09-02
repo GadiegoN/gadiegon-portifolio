@@ -6,7 +6,7 @@ const siteVsInstagram = {
   description:
     "Entenda os limites das redes sociais e quando um site passa a ser o investimento mais estratégico para o crescimento do seu negócio.",
 
-  publishedAt: "2026-07-14",
+  publishedAt: "2026-08-08",
 
   category: "Negócios",
 

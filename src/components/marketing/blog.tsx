@@ -1,56 +1,47 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-
+import { useTranslations } from "next-intl";
 import { articles } from "@/data/blog";
 import { BlogGrid } from "./blog-grid";
+import { ArrowRight, BookOpen } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function BlogSection() {
-  const featuredArticles = articles.slice(0, 3);
+  const t = useTranslations("Blog");
+  const sortedArticles = [...articles].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+  const featuredArticles = sortedArticles.slice(0, 3);
 
   return (
-    <section id="artigos" className="py-28 md:py-32">
-      <div className="container mx-auto max-w-7xl rounded-4xl border border-border/70 bg-card/70 px-6 py-14 shadow-[0_24px_90px_-50px_rgba(0,0,0,0.45)] md:px-8">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center text-3xl font-bold text-foreground md:text-4xl"
-        >
-          Últimos artigos
-        </motion.h2>
+    <section id="blog" className="py-20 md:py-28 border-t border-border/60 bg-muted/10">
+      <div className="container mx-auto max-w-5xl px-6 md:px-8">
+        <div className="flex flex-col gap-4">
+          <span className="text-xs font-bold uppercase tracking-widest text-primary flex items-center gap-1.5">
+            <BookOpen size={14} />
+            {t("tag")}
+          </span>
+          <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            {t("title")}
+          </h2>
+          <p className="max-w-2xl text-base text-muted-foreground">
+            {t("subtitle")}
+          </p>
+        </div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.15, duration: 0.6 }}
-          className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground"
-        >
-          Conteúdos sobre desenvolvimento, Inteligência Artificial, arquitetura,
-          carreira e tecnologia.
-        </motion.p>
-
-        <div className="mt-16">
+        <div className="mt-12">
           <BlogGrid articles={featuredArticles} />
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.25 }}
-          className="mt-14 flex justify-center"
-        >
-          <Link
-            href="/blog"
-            className="rounded-xl border border-border bg-background px-6 py-3 font-medium transition hover:bg-accent"
-          >
-            Ver todos os artigos
-          </Link>
-        </motion.div>
+        <div className="mt-10 flex justify-center">
+          <Button asChild variant="outline" className="gap-2">
+            <Link href="/blog">
+              {t("view_all")}
+              <ArrowRight size={15} />
+            </Link>
+          </Button>
+        </div>
       </div>
     </section>
   );
