@@ -10,6 +10,36 @@ export const metadata: Metadata = {
   title: "Artigos & Conteúdos | Gadiego Nogueira",
   description:
     "Artigos e insights sobre desenvolvimento front-end, mobile, arquitetura de software, inteligência artificial e carreira em tecnologia.",
+
+  alternates: {
+    canonical: "/blog",
+  },
+
+  openGraph: {
+    title: "Blog | Gadiego Nogueira",
+    description:
+      "Conteúdo sobre tecnologia, desenvolvimento, sistemas e processos para transformar ideias em resultados.",
+    url: "/blog",
+    siteName: "Gadiego Nogueira",
+    images: [
+      {
+        url: "/og-image-blog.png",
+        width: 1200,
+        height: 630,
+        alt: "Blog de Gadiego Nogueira — tecnologia, sistemas e processos",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog | Gadiego Nogueira",
+    description:
+      "Artigos, insights e tutoriais sobre tecnologia, desenvolvimento, sistemas e processos.",
+    images: ["/og-image-blog.png"],
+  },
 };
 
 export default async function BlogPage() {
@@ -18,7 +48,7 @@ export default async function BlogPage() {
 
   const sortedArticles = [...articles].sort(
     (a, b) =>
-      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
   );
 
   return (
