@@ -55,19 +55,19 @@
   --primary: oklch(0.52 0.22 280);
   --primary-foreground: oklch(0.99 0.005 265);
   --secondary: oklch(0.96 0.01 265);
-  --secondary-foreground: oklch(0.20 0.03 265);
+  --secondary-foreground: oklch(0.2 0.03 265);
   --muted: oklch(0.96 0.01 265);
-  --muted-foreground: oklch(0.50 0.03 265);
+  --muted-foreground: oklch(0.5 0.03 265);
   --accent: oklch(0.95 0.025 280);
-  --accent-foreground: oklch(0.40 0.16 280);
+  --accent-foreground: oklch(0.4 0.16 280);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.91 0.01 265);
   --input: oklch(0.91 0.01 265);
-  --ring: oklch(0.55 0.20 280);
+  --ring: oklch(0.55 0.2 280);
   --chart-1: oklch(0.52 0.22 280);
-  --chart-2: oklch(0.60 0.15 220);
+  --chart-2: oklch(0.6 0.15 220);
   --chart-3: oklch(0.45 0.18 300);
-  --chart-4: oklch(0.70 0.12 180);
+  --chart-4: oklch(0.7 0.12 180);
   --chart-5: oklch(0.65 0.18 320);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.141 0.005 285.823);
@@ -76,7 +76,7 @@
   --sidebar-accent: oklch(0.967 0.001 286.375);
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.55 0.20 280);
+  --sidebar-ring: oklch(0.55 0.2 280);
 }
 
 .dark {
@@ -90,7 +90,7 @@
   --primary-foreground: oklch(0.11 0.03 260);
   --secondary: oklch(0.22 0.035 260);
   --secondary-foreground: oklch(0.97 0.01 260);
-  --muted: oklch(0.20 0.03 260);
+  --muted: oklch(0.2 0.03 260);
   --muted-foreground: oklch(0.68 0.02 260);
   --accent: oklch(0.24 0.06 280);
   --accent-foreground: oklch(0.92 0.06 280);
@@ -100,8 +100,8 @@
   --ring: oklch(0.73 0.17 282);
   --chart-1: oklch(0.73 0.17 282);
   --chart-2: oklch(0.65 0.15 220);
-  --chart-3: oklch(0.70 0.18 300);
-  --chart-4: oklch(0.60 0.14 180);
+  --chart-3: oklch(0.7 0.18 300);
+  --chart-4: oklch(0.6 0.14 180);
   --chart-5: oklch(0.75 0.16 320);
   --sidebar: oklch(0.15 0.035 260);
   --sidebar-foreground: oklch(0.97 0.01 260);
@@ -151,4 +151,28 @@
       color-mix(in oklab, var(--background) 98%, black 2%),
       var(--background)
     );
+}
+
+.contribution-scrollbar {
+  scrollbar-color: color-mix(in oklab, var(--primary) 65%, transparent)
+    var(--muted);
+  scrollbar-width: thin;
+}
+
+.contribution-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.contribution-scrollbar::-webkit-scrollbar-track {
+  background: var(--muted);
+  border-radius: 999px;
+}
+
+.contribution-scrollbar::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--primary) 65%, transparent);
+  border-radius: 999px;
+}
+
+.contribution-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }

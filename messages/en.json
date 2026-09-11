@@ -145,6 +145,20 @@
       ]
     }
   },
+  "Contributions": {
+    "summary": "{count} contributions in the last year",
+    "grid_label": "Contribution activity over the last year",
+    "tooltip": "{count, plural, =0 {No contributions} one {# contribution} other {# contributions}} on {date}",
+    "less": "Less",
+    "more": "More",
+    "sunday": "Sun",
+    "monday": "Mon",
+    "tuesday": "Tue",
+    "wednesday": "Wed",
+    "thursday": "Thu",
+    "friday": "Fri",
+    "saturday": "Sat"
+  },
   "Skills": {
     "tag": "Skills",
     "title": "Skills & Technologies",

@@ -6,10 +6,14 @@ import { SkillsSection } from "@/components/resume/skills-section";
 import { EducationSection } from "@/components/resume/education-section";
 import { BlogSection } from "@/components/marketing/blog";
 import { ContactSection } from "@/components/resume/contact-section";
-import { getGitHubProjects } from "@/lib/github";
+import { ContributionCalendar } from "@/components/resume/contribution-calendar";
+import { getGitHubContributions, getGitHubProjects } from "@/lib/github";
 
 export default async function HomePage() {
-  const githubProjects = await getGitHubProjects();
+  const [githubProjects, githubContributions] = await Promise.all([
+    getGitHubProjects(),
+    getGitHubContributions(),
+  ]);
 
   return (
     <main className="flex flex-col min-h-screen">
@@ -17,6 +21,7 @@ export default async function HomePage() {
       <AboutSection />
       <ExperienceSection />
       <ProjectsSection githubProjects={githubProjects} />
+      <ContributionCalendar contributions={githubContributions} />
       <SkillsSection />
       <EducationSection />
       <BlogSection />

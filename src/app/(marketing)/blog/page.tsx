@@ -12,21 +12,23 @@ export const metadata: Metadata = {
     "Artigos e insights sobre desenvolvimento front-end, mobile, arquitetura de software, inteligência artificial e carreira em tecnologia.",
 
   alternates: {
-    canonical: "/blog",
+    canonical: "https://www.gadiegon.com/blog",
   },
 
   openGraph: {
-    title: "Blog | Gadiego Nogueira",
+    title: "Artigos & Conteúdos | Gadiego Nogueira",
     description:
       "Conteúdo sobre tecnologia, desenvolvimento, sistemas e processos para transformar ideias em resultados.",
-    url: "/blog",
+    url: "https://www.gadiegon.com/blog",
     siteName: "Gadiego Nogueira",
     images: [
       {
-        url: "/og-image-blog.png",
+        url: "https://www.gadiegon.com/og-image-blog.png",
+        secureUrl: "https://www.gadiegon.com/og-image-blog.png",
         width: 1200,
         height: 630,
         alt: "Blog de Gadiego Nogueira — tecnologia, sistemas e processos",
+        type: "image/png",
       },
     ],
     locale: "pt_BR",
@@ -35,10 +37,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Blog | Gadiego Nogueira",
+    title: "Artigos & Conteúdos | Gadiego Nogueira",
     description:
       "Artigos, insights e tutoriais sobre tecnologia, desenvolvimento, sistemas e processos.",
-    images: ["/og-image-blog.png"],
+    images: ["https://www.gadiegon.com/og-image-blog.png"],
   },
 };
 

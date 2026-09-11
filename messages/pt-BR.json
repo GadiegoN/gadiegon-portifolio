@@ -170,6 +170,20 @@
       "summary": "Página interativa para planejamento e organização visual de aniversários e eventos."
     }
   },
+  "Contributions": {
+    "summary": "{count} contribuições no último ano",
+    "grid_label": "Atividade de contribuições no último ano",
+    "tooltip": "{count, plural, =0 {Nenhuma contribuição} one {# contribuição} other {# contribuições}} em {date}",
+    "less": "Menos",
+    "more": "Mais",
+    "sunday": "Dom",
+    "monday": "Seg",
+    "tuesday": "Ter",
+    "wednesday": "Qua",
+    "thursday": "Qui",
+    "friday": "Sex",
+    "saturday": "Sáb"
+  },
   "Skills": {
     "tag": "Habilidades",
     "title": "Competências & Tecnologias",
